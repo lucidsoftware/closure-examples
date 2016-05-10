@@ -24,9 +24,11 @@ example.Emitter.prototype.doStuff = function() {
  * @const
  */
 example.Emitter.EventType = {
-    /** @const {!goog.events.EventId<example.Emitter.WinLotteryEvent>} */
-    WIN_LOTTERY: new goog.events.EventId(goog.events.getUniqueId('winLottery')), // typed with data
-    FALL_DOWN: goog.events.getUniqueId('fallDown'), // without data
+    /** @const {!goog.events.EventId<!example.Emitter.WinLotteryEvent>} */
+    WIN_LOTTERY: new goog.events.EventId(goog.events.getUniqueId('winLottery')), // with data
+
+    /** @const **/
+    FALL_DOWN: new goog.events.EventId(goog.events.getUniqueId('fallDown')), // without data
 };
 
 /**

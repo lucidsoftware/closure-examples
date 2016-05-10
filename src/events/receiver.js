@@ -17,7 +17,7 @@ example.Receiver = function(emitter) {
     this.registerDisposable(this.eventHandler);
 
     this.eventHandler.listenOnce(emitter, example.Emitter.EventType.WIN_LOTTERY, function(e) {
-        console.log('Won: $' + (e.amount / 1000) + 'k');
+        console.log('Won: $' + (e.amount / 1000) + 'k'); // e.amount is typed
         this.moveToFiji();
     });
 
