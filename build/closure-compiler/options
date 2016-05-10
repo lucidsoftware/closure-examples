@@ -1,0 +1,3 @@
+-O ADVANCED
+--only_closure_dependencies
+--warning_level VERBOSE
