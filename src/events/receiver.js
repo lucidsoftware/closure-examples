@@ -1,5 +1,6 @@
 goog.provide('example.Receiver');
 
+goog.require('example.Emitter.EventType');
 goog.require('goog.Disposable');
 goog.require('goog.events.EventHandler');
 
