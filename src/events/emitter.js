@@ -5,6 +5,7 @@ goog.provide('example.Emitter.WinLotteryEvent');
 
 goog.require('goog.events');
 goog.require('goog.events.Event');
+goog.require('goog.events.EventId');
 goog.require('goog.events.EventTarget');
 
 /**
